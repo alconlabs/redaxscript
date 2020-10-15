@@ -67,6 +67,9 @@ jobs:
  - <<: *test-unit
    php: 7.4
 
+ - <<: *test-unit
+   php: nightly
+
  - &test-unit-windows
    os: windows
 
