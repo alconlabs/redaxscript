@@ -72,6 +72,7 @@ jobs:
 
    before_install:
    - composer require phpunit/phpunit 9 --ignore-platform-reqs
+   - composer remove sebastian/phpcpd --dev
 
    install:
    - composer install --ignore-platform-reqs
