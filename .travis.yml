@@ -71,8 +71,8 @@ jobs:
    php: nightly
 
    before_install:
+   - composer remove sebastian/phpcpd --dev --ignore-platform-reqs
    - composer require phpunit/phpunit 9 --ignore-platform-reqs
-   - composer remove sebastian/phpcpd --dev
 
    install:
    - composer install --ignore-platform-reqs
